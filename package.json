@@ -1,0 +1,19 @@
+{
+  "name": "planet",
+  "version": "1.0.0",
+  "description": "Only css animate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "./node_modules/browser-sync/bin/browser-sync.js start -f {index.html,main.css} -s .",
+    "watch": "./node_modules/stylus/bin/stylus -w main.styl -o main.css",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run watch\""
+  },
+  "author": "Jonathan Bergson <jonathan@bergson.me> (http://bergson.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "concurrently": "^3.1.0",
+    "stylus": "^0.54.5"
+  }
+}

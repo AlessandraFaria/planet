@@ -1,0 +1,11 @@
+star(x, y, color = color-star-50)
+  return x y 0 color
+
+stars(args...)
+  str = args[0]
+
+  for arg, i in args
+    if i != 0
+      str = str, arg
+
+  return str

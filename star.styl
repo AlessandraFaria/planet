@@ -1,0 +1,88 @@
+.stars
+  animation star-balance 100s infinite linear
+  height 100vh
+  left 0
+  position absolute
+  top 0
+  width 100vw
+  z-index 0
+
+
+  //.star
+  //  background-color color-star
+  //  border-radius 50%
+  //  height 7px
+  //  left 50%
+  //  top 50%
+  //  position absolute
+  //  width @height
+  //  box-shadow stars(
+  //    star(-300px, 50px, red),
+  //    star(-400px, 50px, green),
+  //    star(-500px, 50px, blue)
+  //  )
+
+
+  .star-shadow
+    background-color color-star
+    border-radius 50%
+    height 7px
+    position absolute
+    width @height
+
+    &:nth-child(1)
+      box-shadow shadow-star(-100px, 50px), shadow-star(100px, -50px, color-star-30)
+      left 20%
+      top 10%
+
+    &:nth-child(2)
+      box-shadow shadow-star(100px, -50px), shadow-star(-100px, -100px, color-star-40)
+      left 80%
+      top 95%
+
+    &:nth-child(3)
+      box-shadow shadow-star(200px, -100px), shadow-star(150px, 80px, color-star-40)
+      left 5%
+      top 40%
+
+    &:nth-child(4)
+      box-shadow shadow-star(-100px, -100px), shadow-star(-150px, 80px, color-star-40)
+      left 90%
+      top 40%
+
+    &:nth-child(5)
+      box-shadow shadow-star(-100px, -100px), shadow-star(-150px, 80px, color-star-40), shadow-star(200px, 80px, color-star-40), shadow-star(250px, -80px, color-star-60)
+      left 45%
+      top 20%
+
+    &:nth-child(6)
+      box-shadow shadow-star(200px, 50px), shadow-star(-100px, -100px, color-star-20)
+      left 30%
+      top 85%
+
+    &:nth-child(7)
+      box-shadow shadow-star(200px, -100px), shadow-star(-100px, -100px, color-star-20), shadow-star(150px, 70px, color-star-20)
+      left 80%
+      top 15%
+
+    &:nth-child(8)
+      box-shadow shadow-star(300px, -100px), shadow-star(-300px, -150px, color-star-30)
+      left 30%
+      top 15%
+
+    &:nth-child(9)
+      box-shadow shadow-star(150px, -100px), shadow-star(-100px, -100px, color-star-20), shadow-star(-200px, 100px, color-star-30), shadow-star(250px, 60px, color-star-30), shadow-star(150px, 60px, color-star-20)
+      left 75%
+      top 70%
+
+    &:nth-child(10)
+      box-shadow shadow-star(50px, 200px), shadow-star(-100px, -100px, color-star-30), shadow-star(200px, 120px, color-star-30), shadow-star(300px, 60px, color-star-50), shadow-star(200px, 380px, color-star-60), shadow-star(-100px, 300px, color-star-60), shadow-star(100px, 300px, color-star-60)
+      left 10%
+      top 60%
+
+
+@keyframes star-balance
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)

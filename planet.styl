@@ -1,0 +1,342 @@
+.planet
+  animation planet-balance 2s infinite alternate ease-in-out
+  border-radius 50%
+  height 500px
+  overflow hidden
+  position relative
+  transform rotate(15deg)
+  width @height
+  z-index 5
+
+
+  .planet-left
+  .planet-right
+  .planet-center
+    height 100%
+    position absolute
+    top 0
+    width 50%
+
+  .planet-left
+    left 0
+    background-color color-planet-1
+
+  .planet-right
+    right 0
+    background-color color-planet-2
+
+  .planet-center
+    left 50%
+    transform translateX(-50%)
+    width 20%
+
+  .planet-line
+    animation 2s alternate infinite ease-in-out
+    background-color #fff
+    border-radius @height * 2
+    height 4%
+    position relative
+    left 0
+    width 100%
+
+    &:nth-child(1)
+      animation-name planet-line-1
+      width 60%
+
+    &:nth-child(2)
+      animation-name planet-line-2
+      left -10%
+      width 70%
+
+    &:nth-child(3)
+      animation-name planet-line-3
+      width 70%
+
+    &:nth-child(4)
+      animation-name planet-line-4
+      left -30%
+      width 110%
+
+    &:nth-child(5)
+      animation-name planet-line-5
+      width 90%
+
+    &:nth-child(6)
+      animation-name planet-line-6
+      left 10%
+      width 90%
+
+    &:nth-child(7)
+      animation-name planet-line-7
+      width 120%
+
+    &:nth-child(8)
+      animation-name planet-line-8
+      left 30%
+      width 60%
+
+    &:nth-child(9)
+      animation-name planet-line-9
+      width 100%
+
+    &:nth-child(10)
+      animation-name planet-line-10
+      left 40%
+      width 60%
+
+    &:nth-child(11)
+      animation-name planet-line-11
+      width 140%
+
+    &:nth-child(12)
+      animation-name planet-line-12
+      left 20%
+      width 60%
+
+    &:nth-child(13)
+      animation-name planet-line-13
+      width 180%
+
+    &:nth-child(14)
+      animation-name planet-line-14
+      left 40%
+      width 60%
+
+    &:nth-child(15)
+      animation-name planet-line-15
+      width 90%
+
+    &:nth-child(16)
+      animation-name planet-line-16
+      left 40%
+      width 60%
+
+    &:nth-child(17)
+      animation-name planet-line-17
+      width 140%
+
+    &:nth-child(18)
+      animation-name planet-line-18
+      left 20%
+      width 100%
+
+    &:nth-child(19)
+      animation-name planet-line-19
+      width 110%
+
+    &:nth-child(20)
+      animation-name planet-line-20
+      left -10%
+      width 160%
+
+    &:nth-child(21)
+      animation-name planet-line-21
+      width 60%
+
+    &:nth-child(22)
+      animation-name planet-line-22
+      left 10%
+      width 70%
+
+    &:nth-child(23)
+      animation-name planet-line-23
+      width 80%
+
+    &:nth-child(24)
+      animation-name planet-line-24
+      left -30%
+      width 90%
+
+    &:nth-child(25)
+      animation-name planet-line-25
+      width 60%
+
+
+    &.planet-line--bg1
+      background-color: color-planet-1
+
+    &.planet-line--bg2
+      background-color: color-planet-2
+
+
+@keyframes planet-balance
+  from
+    transform: rotate(10deg)
+  to
+    transform: rotate(20deg)
+
+
+@keyframes planet-line-1
+  from
+    width 60%
+  to
+    width 80%
+
+
+@keyframes planet-line-2
+  from
+    left 20%
+  to
+    left -10%
+
+
+@keyframes planet-line-3
+  from
+    width 60%
+  to
+    width 90%
+
+
+@keyframes planet-line-4
+  from
+    left 0
+  to
+    left -40%
+
+
+@keyframes planet-line-5
+  from
+    width 80%
+  to
+    width 100%
+
+
+@keyframes planet-line-6
+  from
+    left -10%
+  to
+    left 30%
+
+
+@keyframes planet-line-7
+  from
+    width 120%
+  to
+    width 80%
+
+
+@keyframes planet-line-8
+  from
+    left 10%
+  to
+    left 40%
+
+
+@keyframes planet-line-9
+  from
+    width 80%
+  to
+    width 110%
+
+
+@keyframes planet-line-10
+  from
+    left 20%
+  to
+    left 40%
+
+
+@keyframes planet-line-11
+  from
+    width 100%
+  to
+    width 140%
+
+
+@keyframes planet-line-12
+  from
+    left 0
+  to
+    left 40%
+
+
+@keyframes planet-line-13
+  from
+    width 160%
+  to
+    width 70%
+
+
+@keyframes planet-line-14
+  from
+    left 20%
+  to
+    left 40%
+
+
+@keyframes planet-line-15
+  from
+    width 60%
+  to
+    width 120%
+
+
+@keyframes planet-line-16
+  from
+    left 40%
+  to
+    left -20%
+    width: 100%
+
+
+@keyframes planet-line-17
+  from
+    width 140%
+  to
+    width 60%
+
+
+@keyframes planet-line-18
+  from
+    left 20%
+  to
+    left 40%
+
+
+@keyframes planet-line-19
+  from
+    width 60%
+  to
+    width 100%
+
+
+@keyframes planet-line-20
+  from
+    left -10%
+  to
+    left 40%
+
+
+@keyframes planet-line-21
+  from
+    width 100%
+  to
+    width 60%
+
+
+@keyframes planet-line-22
+  from
+    left 30%
+  to
+    left 0
+
+
+@keyframes planet-line-23
+  from
+    width 110%
+  to
+    width 80%
+
+
+@keyframes planet-line-24
+  from
+    left -10%
+  to
+    left 30%
+
+
+@keyframes planet-line-25
+  from
+    width 100%
+  to
+    width 60%
